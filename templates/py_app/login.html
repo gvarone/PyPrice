@@ -1,0 +1,19 @@
+{% extends "py_app/base.html" %}
+{% block body_block %}
+
+
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+    <form action="{% url 'py_app:user_login' %}" method="post">
+        {% csrf_token %}
+        <label for="username">Usuario:</label>
+        <input type="text" name="username" placeholder="Ingrese su Usuario">
+
+        <label for="password">Clave:</label>
+        <input type="password" name="password" placeholder="Ingrese su Clave">
+
+        <input type="submit" name="" value="Login">
+    </form>
+</div>
+
+
+{% endblock %}

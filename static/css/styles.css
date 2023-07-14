@@ -1,0 +1,32 @@
+.left-div {
+  flex: 1;
+  text-align: center;
+  color:white;
+  padding-right: 25%;
+  background-color: #212529;
+}
+
+.right-div {
+  top: 0;
+  right: 0;
+  text-align: center;
+  background-color: #212529;
+
+}
+
+body {
+  background-color: #212529;
+}
+
+.historial{
+  text-align: center;
+  background-color: #212529;
+  color:white;
+  }
+
+
+
+
+
+
+

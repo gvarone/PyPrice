@@ -1,0 +1,20 @@
+{% extends "py_app/base.html" %}
+{% block body_block %}
+
+
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+    {% if registered %}
+    <h1>Ya estas registrado</h1>
+    {% else %}
+        <h2>Llene el formulario</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        <input type="submit" name=" " value="Registrarse">
+    </form>
+    {% endif %}
+</div>
+
+
+{% endblock %}
+
